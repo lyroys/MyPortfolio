@@ -1,0 +1,532 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: lighter;
+}
+
+header {
+  width: 100%;
+  min-height: 100vh;
+  background: url(images/bg1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#menu ul li a img {
+  width: 60px;
+  margin: 0 auto;
+  padding-left: 40px;
+  opacity: 0.4;
+  float: left;
+}
+
+#menu ul li a img:hover {
+  opacity: 1;
+}
+
+#gradient {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  z-index: 0;
+}
+
+#mainLogo {
+  width: 100%;
+  height: 100vh;
+}
+
+#mainLogo img {
+  top: 50%;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 70%;
+}
+
+#buttonDown {
+  color: black;
+  font-size: 6em;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.buttD {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.buttD:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#me {
+  width: 40%;
+  float: left;
+}
+
+.content {
+  min-height: 100vh;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+  background: url(images/bg2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content img {
+  width: 50%;
+  margin-left: 20%;
+  margin-top: 100px;
+  min-width: 220px;
+  border-radius: 34px;
+}
+
+.title h1 {
+  margin: 3vh 0 3vh 0;
+  text-align: center;
+  line-height: 1.4;
+  font-family: 'Russo One';
+  font-size: 55px;
+}
+
+#myDesc {
+  background-color: rgba(77, 77, 77, 0.1);
+  float: left;
+  width: 50%;
+  margin-top: 100px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 1.4;
+  /* margin-right: 8%; */
+  padding: 5%;
+  float: left;
+}
+
+#title2 {
+  padding-top: 20px;
+}
+
+#icons {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.faDesc {
+  margin: 0 auto;
+  padding-top: 50px;
+  display: inline-block;
+}
+
+.techIcons {
+  padding-left: 40px;
+  font-size: 8em;
+  display: block;
+  padding: 0 40px 0 40px;
+}
+
+.abDesc {
+  font-family: 'Russo One';
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  margin-left: 10%;
+}
+
+.faDesc a {
+  padding-top: 15px;
+  display: block;
+  font-size: 30px;
+  text-align: center;
+}
+
+.abDesc ul {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.faDesc:hover {
+  color: rgb(102, 102, 102);
+}
+
+.lang {
+  font-size: 15px;
+}
+
+#skills {
+  width: 100%;
+  background: url(images/bg1tr.png);
+  min-height: 100vh;
+  display: inline-block;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#projects {
+  background: url(images/bg2R.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: inline-block;
+  min-height: 500px;
+}
+
+.projectsDesc {
+  margin-top: 10px;
+  font-family: 'Russo One';
+  font-size: 15px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#footer {
+  min-height: 200px;
+  width: 100%;
+  background-color: rgba(35, 144, 144, 0.9);
+}
+
+#footCenter {
+  min-height: 200px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.techIconsFoot {
+  padding-left: 40px;
+  font-size: 5em;
+  display: block;
+  position: relative;
+  padding: 0 auto;
+  margin: 0 auto;
+  padding: 0 40px 0 40px;
+}
+
+.faFoot {
+  margin: 0 auto;
+  padding: 0 auto;
+  display: inline-block;
+}
+
+.faFoot a {
+  padding-top: 10px;
+  display: block;
+  font-size: 15px;
+  text-align: center;
+}
+
+.faFoot:hover {
+  color: white;
+}
+
+.mail {
+  padding: 20px 0 20px 0;
+  color: black;
+  font-family: 'Russo One';
+  font-size: 20px;
+  line-height: 1.4;
+
+}
+
+.mail button {
+  background-color: rgba(0, 173, 163, 0.9);
+  border: none;
+  margin-left: 15px;
+  width: 110px;
+  height: 40px;
+  color: black;
+  font-family: 'Russo One';
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+    border: 1px solid black;
+}
+
+.mail button:hover {
+  background-color: black;
+  color: white;
+}
+
+.logo img {
+  width: 252px;
+  line-height: 60px;
+  position: fixed;
+  float: left;
+  margin: 0 16px;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  line-height: 60px;
+  z-index: 2;
+}
+
+nav ul li a {
+  transition: 1s;
+}
+
+nav ul {
+  line-height: 40px;
+  list-style: none;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  color: #fff;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  padding-right: 40px;
+  transition: 1s;
+}
+
+nav.black ul {
+  background: rgba(77, 77, 77, 0.92);
+}
+
+nav.black ul li a {
+  color: white;
+}
+
+nav ul li {
+  display: inline-block;
+  overflow: auto;
+  padding: 16px 20px;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#menu-icon {
+  line-height: 60px;
+  width: 100%;
+  background: #000;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+
+.imgContainer {
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  padding: 30px 30px 30px 30px;
+}
+
+#projectsImg {
+  text-align: center;
+  width: 100%;
+}
+
+.image {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  opacity: 1;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.imgContainer:hover .image {
+  opacity: 0.3;
+}
+
+.imgContainer:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: rgba(134, 134, 172, 0.9);
+  color: white;
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 16px 32px;
+  display: block;
+  text-decoration: none;
+}
+
+.text:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.imgContainer a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.links {
+  text-decoration: none;
+  color: black;
+}
+
+.slideMenu {
+  margin-top: 10px;
+  color: black;
+}
+
+.slideMenu {
+  font-size: 24px;
+  font-family: 'Russo One';
+}
+
+.slideMenu:hover {
+  transition: 0.2s;
+  font-size: 30px;
+}
+
+.lang{
+  margin-bottom: 40px;
+}
+
+@media(max-width: 1000px) {
+  .slideMenu {
+    font-size: 20px;
+  }
+  nav ul {
+    background: black !important;
+  }
+  .slideMenu {
+    color: white;
+  }
+  .techIcons {
+    font-size: 5em;
+  }
+  #projects {
+    height: auto;
+  }
+  #myDesc {
+    font-size: 20px;
+    width: 90%;
+    min-height: auto;
+    margin-top: 20px;
+  }
+  #me {
+    min-height: auto;
+    width: 100%;
+  }
+  #me img {
+    width: 5%;
+  }
+  .content {
+    min-height: auto;
+  }
+  .projectsDesc {
+    background-color: rgb(255, 255, 255);
+  }
+  .text {
+    background-color: rgb(134, 134, 172);
+  }
+  .text:hover {
+    background-color: rgb(0, 0, 0);
+  }
+  #menu ul li a img {
+    padding-left: 0;
+  }
+  .imgContainer {
+    margin: 10px 0 10px 0;
+    width: 70%;
+  }
+  .abDesc ul {
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+  .imgContainer .middle {
+    opacity: 1;
+  }
+  .title h1 {
+    font-size: 40px;
+  }
+  .content img {
+    display: block;
+    margin: auto;
+    float: none;
+  }
+  header #mainLogo img {
+    position: absolute;
+    height: auto;
+    min-width: 100%;
+  }
+  .logo {
+    position: fixed;
+    top: 0;
+  }
+  nav ul {
+    overflow: auto;
+    max-height: 0px;
+    background: #000;
+  }
+  .showing {
+    max-height: 80vh;
+  }
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px;
+    text-align: center;
+  }
+  #menu-icon {
+    display: block;
+  }
+  .text {
+    background-color: rgba(134, 134, 172, 0.9);
+    color: white;
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 16px 32px;
+  }
+  .projectsDesc {
+    font-size: 12px;
+  }
+
+  .lang{
+    display: inline-block;
+  }
+}
