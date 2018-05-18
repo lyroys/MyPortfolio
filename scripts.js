@@ -21,14 +21,14 @@ $(document).ready(function() {
   var navHigh = $('nav').outerHeight(); //86.4
   $('.slide').click(function(e) {
 
-    console.log(navHigh);
+  
 
     var linkHref = $(this).attr('href');
-    console.log(linkHref);
+ 
     $('html, body').animate({
       scrollTop: $(linkHref).offset().top - 86.4
     }, 1000);
-    console.log($(linkHref).offset().top);
+
     e.preventDefault();
   });
 
