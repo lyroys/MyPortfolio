@@ -18,6 +18,79 @@ header {
   background-position: center;
   background-repeat: no-repeat;
 }
+#preloader{
+background: #a8c0ff linear-gradient(to right, #a8c0ff, #3f2b96);
+background-size: cover;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+
+width: 100%;
+height: 100%;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 1000;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: opacity .35s ease;
+}
+
+.triangle{
+width: 0;
+height: 0;
+border-top: 100px solid #1a75ff;
+border-left: 50px solid transparent;
+border-right: 50px solid transparent;
+
+}
+.triangleOther{
+width: 0;
+height: 0;
+border-left: 50px solid transparent;
+border-right: 50px solid transparent;
+border-bottom: 100px solid #66a3ff;
+}
+.animated{
+animation: preloadAnim 1.5s ease infinite;
+}
+@keyframes preloadAnim{
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.animated:nth-child(1){
+  animation-delay: 50ms;
+}
+.animated:nth-child(2){
+  animation-delay: 150ms;
+}
+.animated:nth-child(3){
+  animation-delay: 50ms;
+}
+.animated:nth-child(4){
+  animation-delay: 150ms;
+}
+.animated:nth-child(5){
+  animation-delay: 50ms;
+}
+
+#preloader.prelOpacity{
+  opacity: 0;
+}
+#preloader.prelHide{
+  display: none;
+}
+
 
 #menu ul li a img {
   width: 60px;
@@ -427,7 +500,8 @@ nav ul li a {
   margin-bottom: 40px;
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1100px) {
+
   .slideMenu {
     font-size: 20px;
   }
@@ -471,10 +545,7 @@ nav ul li a {
   #menu ul li a img {
     padding-left: 0;
   }
-  .imgContainer {
-    margin: 10px 0 10px 0;
-    width: 70%;
-  }
+
   .abDesc ul {
     margin: 0 auto;
     padding: 0 auto;
@@ -529,5 +600,26 @@ nav ul li a {
 
   .lang{
     display: inline-block;
+  }
+}
+@media(max-width: 600px) {
+  .triangle{
+  width: 0;
+  height: 0;
+  border-top: 50px solid #1a75ff;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+
+  }
+  .triangleOther{
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid #66a3ff;
+  }
+  .imgContainer {
+    margin: 10px 0 10px 0;
+    width: 70%;
   }
 }

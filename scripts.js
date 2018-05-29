@@ -1,3 +1,4 @@
+
 //copying mail
 function copyToClipboard(element) {
   var $temp = $("<input>");
@@ -21,10 +22,10 @@ $(document).ready(function() {
   var navHigh = $('nav').outerHeight(); //86.4
   $('.slide').click(function(e) {
 
-  
+
 
     var linkHref = $(this).attr('href');
- 
+
     $('html, body').animate({
       scrollTop: $(linkHref).offset().top - 86.4
     }, 1000);
@@ -41,5 +42,4 @@ $(window).on("scroll", function() {
   } else {
     $('nav').removeClass('black');
   }
-
 })
